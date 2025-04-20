@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Cahier des charges interactif - PixVerse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .accordion-button::after {
+      content: '+';
+      float: right;
+    }
+    .accordion-button.active::after {
+      content: '-';
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans p-6">
+  <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-md p-6">
+    <h1 class="text-3xl font-bold mb-6 text-purple-700">Cahier des charges - PixVerse</h1>
+
+    <div id="accordion">
+      <div class="mb-4">
+        <button class="accordion-button font-semibold text-lg w-full text-left py-2 px-4 bg-purple-100 rounded-md">1. Présentation du projet</button>
+        <div class="accordion-content hidden mt-2 px-4">
+          <p>PixVerse est une application mobile destinée à la création, édition et partage de vidéos de manière simple et intuitive.</p>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <button class="accordion-button font-semibold text-lg w-full text-left py-2 px-4 bg-purple-100 rounded-md">2. Objectifs</button>
+        <div class="accordion-content hidden mt-2 px-4">
+          <ul class="list-disc ml-5">
+            <li>Montage vidéo facile</li>
+            <li>Filtres et effets</li>
+            <li>Export & partage</li>
+            <li>Interface intuitive</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <button class="accordion-button font-semibold text-lg w-full text-left py-2 px-4 bg-purple-100 rounded-md">3. Fonctionnalités principales</button>
+        <div class="accordion-content hidden mt-2 px-4">
+          <ul class="list-disc ml-5">
+            <li>Caméra intégrée</li>
+            <li>Montage (découpe, musique, texte)</li>
+            <li>Filtres, stickers</li>
+            <li>Export HD, partage social</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <button class="accordion-button font-semibold text-lg w-full text-left py-2 px-4 bg-purple-100 rounded-md">4. Public cible</button>
+        <div class="accordion-content hidden mt-2 px-4">
+          <p>Créateurs de contenu, influenceurs, jeunes utilisateurs de réseaux sociaux.</p>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <button class="accordion-button font-semibold text-lg w-full text-left py-2 px-4 bg-purple-100 rounded-md">5. Plateformes cibles</button>
+        <div class="accordion-content hidden mt-2 px-4">
+          <ul class="list-disc ml-5">
+            <li>Android</li>
+            <li>iOS</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <button class="accordion-button font-semibold text-lg w-full text-left py-2 px-4 bg-purple-100 rounded-md">6. Technologies</button>
+        <div class="accordion-content hidden mt-2 px-4">
+          <ul class="list-disc ml-5">
+            <li>React Native ou Flutter</li>
+            <li>Firebase / Node.js</li>
+            <li>Stockage Cloud</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <button class="accordion-button font-semibold text-lg w-full text-left py-2 px-4 bg-purple-100 rounded-md">7. Design & UX</button>
+        <div class="accordion-content hidden mt-2 px-4">
+          <p>Design épuré, navigation fluide, accessibilité, animations légères, mode clair/sombre.</p>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <button class="accordion-button font-semibold text-lg w-full text-left py-2 px-4 bg-purple-100 rounded-md">8. Planning prévisionnel</button>
+        <div class="accordion-content hidden mt-2 px-4">
+          <ul class="list-disc ml-5">
+            <li>Semaine 1-2 : Spécifications</li>
+            <li>Semaine 3-6 : Développement</li>
+            <li>Semaine 7-9 : Intégration & tests</li>
+            <li>Semaine 10-11 : Déploiement</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <button class="accordion-button font-semibold text-lg w-full text-left py-2 px-4 bg-purple-100 rounded-md">9. Budget estimé</button>
+        <div class="accordion-content hidden mt-2 px-4">
+          <p>À définir selon ressources (design, dev, marketing...)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll(".accordion-button");
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        button.classList.toggle("active");
+        const content = button.nextElementSibling;
+        content.classList.toggle("hidden");
+      });
+    });
+  </script>
+</body>
+</html>
